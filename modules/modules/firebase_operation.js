@@ -42,6 +42,7 @@ function insertData(name, email, mobile, message){
     })
     .then(() => {
         alert("Thank you for showing your interest, we will contact you soon!");
+        document.getElementById("project-contact-form").reset();
     })
     .catch((error) => {
         alert("unsuccessful, error: "+error);
